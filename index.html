@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Smart Study App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📱 My Life App</h1>
+
+<div class="card">
+  <h2 id="timer">25:00</h2>
+  <button onclick="startTimer()">Start</button>
+</div>
+
+<div class="card">
+  <h2>Tasks</h2>
+  <input type="text" id="taskInput">
+  <button onclick="addTask()">Add</button>
+  <ul id="taskList"></ul>
+</div>
+
+<div class="card">
+  <h2>Mood</h2>
+  <button onclick="setMood('😊')">😊</button>
+  <button onclick="setMood('😐')">😐</button>
+  <button onclick="setMood('😢')">😢</button>
+  <p id="mood"></p>
+</div>
+
+<div class="card">
+  <h2>Water 💧</h2>
+  <button onclick="drinkWater()">Drink</button>
+  <p id="water"></p>
+</div>
+<div class="card">
+  <h2>Progress 📊</h2>
+  <p id="progress">Tasks done: 0</p>
+</div>
+
+<button onclick="toggleMode()">🌗 Mode</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<div class="card">
+  <h2>Motivation 💪</h2>
+  <p id="quote">You got this 🚀</p>
+</div>
+<p>Made by-Aayushman Chaubey 💻</p>
+
