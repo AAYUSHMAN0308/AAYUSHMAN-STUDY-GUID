@@ -88,3 +88,11 @@ setInterval(() => {
   let q = quotes[Math.floor(Math.random() * quotes.length)];
   document.getElementById("quote").innerText = q;
 }, 3000);
+window.onload = function() {
+  document.getElementById("loader").style.display = "none";
+};
+function newQuote() {
+  let quotes = ["Study hard", "Never give up", "Focus karo", "You can do it"];
+  let r = Math.floor(Math.random()*quotes.length);
+  document.getElementById("quote").innerText = quotes[r];
+}
